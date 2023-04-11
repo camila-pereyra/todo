@@ -1,6 +1,8 @@
 .container{
-    width: 250px;
-    padding: 5px;
-    box-shadow: 10px 10px 15px rgb(131, 131, 131);
-
+    width: 300px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px rgb(213, 213, 247);
+    border: solid 1px lavender;
+    border-radius: 30px;
+    background-color: lavender;
 }

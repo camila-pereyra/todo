@@ -1,0 +1,19 @@
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+    border-top: solid 1px grey;
+
+}
+.buttonDelete{
+    width: 80%;
+    padding: 10px ;
+    font-size: 20px;
+    border: none;
+    background-color: #ff9996;
+    box-shadow: 2px 2px grey;
+    border-radius: 15px;
+    font-family: 'Rajdhani', sans-serif;
+
+}

@@ -1,0 +1,34 @@
+.formTodoContainer{
+    width: 100%;
+    padding: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px grey;
+}
+.noTasks{
+    text-align: center;
+    margin-top: 15px;
+    color: grey;
+}
+.formTodoContainer input{
+    width: 180px;
+    padding: 10px ;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px grey;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+.formTodoContainer button{
+    width: 70px;
+    padding: 10px ;
+    font-size: 20px;
+    border: none;
+    background-color: #b7d2ff;
+    box-shadow: 2px 2px grey;
+    border-radius: 15px;
+    font-family: 'Rajdhani', sans-serif;
+}
