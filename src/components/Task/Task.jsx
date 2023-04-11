@@ -1,6 +1,6 @@
-const Task = () => {
+const Task = ({task}) => {
   return (
-    <div>Task</div>
+    <div>Tarea:{task}</div>
   )
 }
 

@@ -1,10 +1,15 @@
 import Task from "../Task/Task"
 
-const Tasklist = () => {
+const Tasklist = ({arrayTask}) => {
+  
+const createTask = (arrayTask) =>
+arrayTask.map((task) => (
+      <Task key={task} task={task} />
+    ));
+
+  
   return (
-    <div>Tasklist
-        <Task/>
-    </div>
+    <div>{createTask(arrayTask)}</div>
   )
 }
 

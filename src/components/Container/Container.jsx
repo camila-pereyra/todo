@@ -1,11 +1,11 @@
-import Formtodo from "../Formtodo/Formtodo"
-import Tasklist from "../Tasklist/Tasklist"
+
+import FormTodo from "../FormTodo/FormTodo"
+import "./Container.css"
 
 const Container = () => {
-  return (
-    <div>Container
-        <Formtodo/>
-        <Tasklist/>
+    return (
+    <div className="container">
+        <FormTodo/>
     </div>
   )
 }
