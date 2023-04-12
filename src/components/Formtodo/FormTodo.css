@@ -6,11 +6,6 @@
     align-items: center;
     border-bottom: solid 1px grey;
 }
-.noTasks{
-    text-align: center;
-    margin-top: 15px;
-    color: grey;
-}
 .formTodoContainer input{
     width: 180px;
     padding: 10px ;
@@ -31,4 +26,25 @@
     box-shadow: 2px 2px grey;
     border-radius: 15px;
     font-family: 'Rajdhani', sans-serif;
+    outline: none;
+    transition: background-color .2s ease-in-out;
+}
+.formTodoContainer button:hover{
+    background-color: #99bcf8;
+}
+@media (min-width:576px) {
+    .formTodoContainer input{
+        width: 80%;
+    }
+    .formTodoContainer button{
+        width: 15%;
+    };   
+}
+@media (min-width:992px) {
+    .formTodoContainer input{
+        font-size: 25px;
+    }
+    .formTodoContainer button{
+        font-size: 25px;
+    }; 
 }

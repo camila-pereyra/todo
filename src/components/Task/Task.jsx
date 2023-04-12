@@ -1,20 +1,17 @@
-import { useState } from "react"
 import "./Task.css"
-import classNames from "classnames";
+import classNames from "classnames"
 
-const Task = ({task}) => {
-  const [checked,setChecked]=useState(false);
-  const onChange=()=>{
-    setChecked(!checked)
-  }
-  let taskContainer=classNames({
-    taskContainer: true,
-    isChecked: checked===true,
+const Task = ({onChange, task}) => {  
+
+  const taskCointainerClass=classNames({
+    taskContainer:true,
+    isChecked: task.done===true,
   })
+  
   return (
-    <div className={taskContainer} >
-      <input type="checkbox" defaultChecked={checked} className="checkbox" onChange={onChange} />
-      <p>{task}</p>
+    <div className={taskCointainerClass} >
+      <input type="checkbox" className="checkbox" name={task.id} defaultChecked={task.done} onChange={onChange} />
+      <p className="task">{task.description}</p>
     </div>
   )
 }

@@ -1,27 +1,25 @@
 import { useState } from "react"
-import Tasklist from "../Tasklist/Tasklist"
 import "./FormTodo.css"
 
-const FormTodo = () => {
+const FormTodo = ({listTask,handleAddTask}) => {
   const [input, setInput] = useState("")
-  const [arrayTask,setArrayTask]=useState([])
+  const [count,setCount]=useState(0)
+
   const handleClick =()=>{
     if(input!==""){
-      setArrayTask([...arrayTask,input]);
+      setCount(count+1)
+      handleAddTask({id:count,done:false,description:input,})
       setInput("")
     }
   }
+  
   return (
     <>
       <div className="formTodoContainer">
-          <input type="text" name="" id="" placeholder="Task ..." value={input} 
-          onChange={(e)=>{setInput(e.target.value)}}/>
+          <input type="text" name="" id="" placeholder="Task ..." value={input} onChange={(e)=>{setInput(e.target.value)}}/>
           <button type="button" onClick={handleClick}>Add</button>
       </div>
-      <div className="taskListContainer">
-        {arrayTask.length===0? <p className="noTasks">No tasks</p>:<Tasklist arrayTask={arrayTask} setArrayTask={setArrayTask}/>}
-        
-      </div>
+     
     </>
   )
 }

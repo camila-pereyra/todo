@@ -1,24 +1,42 @@
 import Task from "../Task/Task"
 import "./TaskList.css"
 
-const Tasklist = ({arrayTask,setArrayTask}) => {
-  
-const createTask = (arrayTask) =>
-  arrayTask.map((task) => (<Task key={task} task={task} />
+const Tasklist = ({listTask,setListTask}) => {
+
+const createTask = () => listTask.map((task) =>  
+(<Task key={task.id} task={task} onChange={onChangeStatus}/> 
 ));
-const deleteAll =(arrayTask)=>{
-  setArrayTask([]) 
+
+const onChangeStatus = e => {
+  const { name, checked } = e.target;
+  const updateList = listTask.map(item => ({
+    ...item,
+    done: item.id.toString() === name ? checked : item.done
+  }));
+  setListTask(updateList);
+};
+
+const deleteAll = ()=>{
+  setListTask ([]);
 }
 
-  
+const deleteAllDone=()=>{
+  const updateList = listTask.filter(item=>!item.done)
+  setListTask(updateList)
+}
+
   return (
-    <div>
-      {createTask(arrayTask)}
-      <div className="buttonContainer">
-        <button type="button" className="buttonDelete" onClick={deleteAll}>Delete All</button>
-      </div>
-      
-    </div>
+    listTask.length===0 ? <p className="noTasks">No tasks</p>:
+     (
+      <>
+        {createTask()}
+        <div className="buttonContainer">
+          <p className="dataTask">Total tasks: {listTask.length}</p>
+          <button className="buttonDeleteAll" onClick={deleteAll}>Delete all</button>
+          <button className="buttonDeleteDone" onClick={deleteAllDone}>Delete all done</button>
+        </div>
+      </>
+    )
   )
 }
 
