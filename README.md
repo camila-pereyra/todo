@@ -2,12 +2,8 @@
   <h1>TODO REACT JS APP
   <br>
   <br>
-  <a href="https://github.com/camila-pereyra/todo/"><img src="src/images/videoTodoCompressed.webm" alt="Video todo" width="800"></a>
-  <br>
-  <br>
 </div>
-<h3 align="center">REACT JS TODO</h3>
-<h4 align="center">Autora: Camila Pereyra</h4>
+<h3 align="center">Autora: Camila Pereyra</h3>
 <p align="center"><a href="https://github.com/camila-pereyra/todo"><strong>Ver Documentación »</strong></a> </p>
 <br>
 <p align="center">
