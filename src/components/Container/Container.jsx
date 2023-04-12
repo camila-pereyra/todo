@@ -1,5 +1,5 @@
 import { useState } from "react"
-import FormTodo from "../Formtodo/Formtodo"
+import Formtodo from "../Formtodo/Formtodo"
 import Tasklist from "../Tasklist/Tasklist"
 import "./Container.css"
 
