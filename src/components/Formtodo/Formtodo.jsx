@@ -1,7 +1,7 @@
 import { useState } from "react"
-import "./Formtodo.css"
+import "./FormTodo.css"
 
-const Formtodo = ({handleAddTask}) => {
+const FormTodo = ({handleAddTask}) => {
   const [input, setInput] = useState("")
   const [count,setCount]=useState(0)
 
@@ -23,5 +23,4 @@ const Formtodo = ({handleAddTask}) => {
     </>
   )
 }
-
-export default Formtodo
+export default FormTodo
