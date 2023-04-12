@@ -64,11 +64,6 @@ $ npm start
 
 <br>
 
-## Sitio web
-
-
-<br>
-
 ## Contacto
 ##### **camilabpereyra2305@gmail.com**
 ##### Linkedin: https://www.linkedin.com/in/camila-bianca-pereyra/
