@@ -1,18 +1,18 @@
 <div align="center">
   <h1>TODO REACT JS APP
   <br>
-  <br>
 </div>
 <h3 align="center">Autora: Camila Pereyra</h3>
 <p align="center"><a href="https://github.com/camila-pereyra/todo"><strong>Ver Documentación »</strong></a> </p>
 <br>
 <p align="center">
   <a href="#acerca-del-proyecto">Acerca del proyecto</a> |
+  <a href="#vista-previa">Vista previa del proyecto</a> |
   <a href="#construido-con">Construido con</a> |
   <a href="#como-usarlo">Como usarlo</a> |
   <a href="#mas-herramientas">Mas herramientas</a> |
   <a href="#sitio-web">Sitio Web</a> |
-    <a href="#contacto">Contacto</a> 
+  <a href="#contacto">Contacto</a> 
 </p>
 <br>
 
@@ -20,6 +20,13 @@
 <p align="justify">Este proyecto está desarrollado con ReactJS y Javascript. 
 Es un sitio web que representa una lista de tareas pendientes/realizadas. La funcionalidad que puede darle el usuario es similiar a la funcionalidad de un anotador/agenda. El usuario puede agregar tareas a realizar, marcar las ya realizadas, borrar las que ya hizo o bien, borrar todas las tareas. A su vez, tiene un contador de tareas. Es un proyecto que esta diseñado bajo el enfoque "Mobile First" y es totalmente responsive, se puede adaptar a cualquier tamaño de pantalla (a partir de los 320px en adelante).
 </p>
+<br>
+
+## Vista previa
+
+<a href="https://github.com/camila-pereyra/todo/"><img src="src/images/TV7b0qn.png" alt="Calculator" width="800"></a>
+<a href="https://github.com/camila-pereyra/todo/"><img src="src/images/vmTnjwV.png" alt="Calculator" width="800"></a>
+
 <br>
 
 ## Construido con
