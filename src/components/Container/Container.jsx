@@ -1,5 +1,5 @@
 import { useState } from "react"
-import FormTodo from "../Formtodo/FormTodo"
+import FormTodo from "../Formtodo/Formtodo"
 import Tasklist from "../Tasklist/Tasklist"
 import "./Container.css"
 
@@ -11,7 +11,7 @@ const Container = () => {
   }
     return (
     <div className="container">
-        <FormTodo handleAddTask={handleAddTask}/>
+        <Formtodo handleAddTask={handleAddTask}/>
         <Tasklist listTask={listTask} setListTask={setListTask}/>
     </div>
   )
